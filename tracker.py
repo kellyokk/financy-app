@@ -184,7 +184,6 @@ def render():
             col_chart, col_bars = st.columns([1, 2])
 
             with col_chart:
-                # Simple donut via plotly
                 try:
                     import plotly.graph_objects as go
                     fig = go.Figure(go.Pie(

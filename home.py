@@ -27,7 +27,6 @@ def render():
                 <div class="card-desc">
                     Upload 1–3 months of bank statements. Our model analyses your spending patterns, identifies opportunities, and builds a custom tracker just for you.
                 </div>
-                <div class="card-cta">Get My Tracker <span class="card-cta-arrow">→</span></div>
             </div>
             """, unsafe_allow_html=True)
             if st.button("Get My Tracker", key="go_tracker", use_container_width=True):
@@ -42,7 +41,6 @@ def render():
                 <div class="card-desc">
                     Ask anything — investing, saving for a trip or home, credit building, budgeting strategies. Financy is your always-on personal finance educator.
                 </div>
-                <div class="card-cta">Start Chatting <span class="card-cta-arrow">→</span></div>
             </div>
             """, unsafe_allow_html=True)
             if st.button("Start Chatting", key="go_chat", use_container_width=True):

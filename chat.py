@@ -51,8 +51,17 @@ def _timestamp():
     return datetime.now().strftime("%I:%M %p")
 
 
+def _get_api_key() -> str:
+    """Retrieve the Anthropic API key from Streamlit secrets."""
+    try:
+        return st.secrets["ANTHROPIC_API_KEY"]
+    except KeyError:
+        st.error("⚠️ Anthropic API key not found. Add `ANTHROPIC_API_KEY` to your `.streamlit/secrets.toml` file.")
+        st.stop()
+
+
 def _get_ai_response(messages: list) -> str:
-    client = anthropic.Anthropic()
+    client = anthropic.Anthropic(api_key=_get_api_key())
     response = client.messages.create(
         model="claude-sonnet-4-20250514",
         max_tokens=1000,
