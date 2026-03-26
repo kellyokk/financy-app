@@ -53,7 +53,7 @@ def render():
     st.markdown("""
     <div style="text-align:center; margin-top:3rem; padding-bottom:2rem;">
         <p style="font-size:0.72rem; color:#3a3a52; letter-spacing:0.15em; text-transform:uppercase;">
-            Powered by Claude AI &nbsp;·&nbsp; Your data stays private &nbsp;·&nbsp; No financial advice is stored
+            Your data stays private &nbsp;·&nbsp; No financial advice is stored
         </p>
     </div>
     """, unsafe_allow_html=True)
