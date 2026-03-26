@@ -4,6 +4,6 @@ numpy==2.3.5
 scikit-learn==1.8.0
 matplotlib==3.10.8
 plotly==6.6.0
-openai==2.30.0
 python-dotenv==1.2.1
 pdfplumber==0.11.9
+anthropic==0.86.0
